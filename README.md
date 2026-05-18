@@ -15,5 +15,5 @@ Zoptymalizowane Przypadki Testowe
 
 
 
-⚠️ Nota prawna / Disclaimer
-Projekt został stworzony wyłącznie w celach naukowych, edukacyjnych oraz prezentacji własnego portfolio technicznego. Testy automatyczne są uruchamiane lokalnie, w odizolowanym środowisku testowym i nie służą do celów komercyjnych ani masowego pobierania danych.
+## ⚠️ Nota prawna / Disclaimer
+Projekt został stworzony wyłącznie w celach naukowych, edukacyjnych oraz prezentacji własnego portfolio technicznego. Testy automatyczne są uruchamiane lokalnie, w odizolowanym środowisku testowym i nie służą do celów komercyjnych ani masowego pobierania danych (web scraping).
