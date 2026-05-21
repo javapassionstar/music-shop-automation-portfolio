@@ -53,7 +53,7 @@ public class MusicShopTest {
     }
 
     @Test
-    public void testExtractProductPriceUsingPOM() {
+    public void testExtractProductPrice() {
         ThomannHomePage homePage = new ThomannHomePage(driver);
 
         homePage.open()

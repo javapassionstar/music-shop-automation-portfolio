@@ -1,20 +1,24 @@
-# Music Shop Automation Portfolio
+# 🛒 Music Shop E-Commerce Automation Framework
 
-Profesjonalny framework do automatyzacji testów e-commerce oparty na sklepie Thomann. Projekt został zaprojektowany z myślą o najwyższych standardach komercyjnych i optymalizacji biznesowej.
+A professional e-commerce test automation framework based on the Thomann music store platform. The project is engineered according to production-grade commercial standards and optimized for business efficiency.
 
-## Architektura i Technologie
-* **Java 17** – najnowszy standard obiektowy.
-* **Selenium WebDriver 4** – nowoczesne sterowanie przeglądarką.
-* **Page Object Model (POM)** – czysta separacja warstw i lokatorów.
-* **Fluent Interface** – płynne łańcuchowanie metod zbliżone do naturalnego języka biznesowego.
-* **JUnit 5** – nowoczesny silnik testowy i asercje.
+## 🚀 Architecture & Tech Stack
 
-## Zoptymalizowane Przypadki Testowe
-1. `testSearchForInstrumentUsingPOM` – weryfikacja poprawności działania wyszukiwarki produktów.
-2. `testExtractProductPriceUsingPOM` – zoptymalizowany biznesowo test pobierania danych finansowych (ceny produktu) bezpośrednio z poziomu listy wyników wyszukiwania, minimalizujący narzut czasowy egzekucji testu.
+* **Java 17** – Utilizing modern object-oriented standards and features.
+* **Selenium WebDriver 4** – Advanced browser control and modern automation API.
+* **Page Object Model (POM)** – Strict separation of the test logic layer from UI locators for high maintainability.
+* **Fluent Interface (Method Chaining)** – Elegant code structure that mirrors natural business language and improves readability.
+* **JUnit 5** – Modern test engine utilizing powerful assertions and lifecycle management.
 
+---
 
+## 🗺️ Optimized Test Cases
 
+1. `testSearchForInstrument` – Verifies the functionality, accuracy, and performance of the product search engine.
+2. `testExtractProductPrice` – A business-optimized test that extracts financial data (product prices) directly from the search results grid. This approach eliminates unnecessary page reloads and page transitions, significantly reducing test execution time and infrastructure overhead.
 
-## ⚠️ Nota prawna / Disclaimer
-Projekt został stworzony wyłącznie w celach naukowych, edukacyjnych oraz prezentacji własnego portfolio technicznego. Testy automatyczne są uruchamiane lokalnie, w odizolowanym środowisku testowym i nie służą do celów komercyjnych ani masowego pobierania danych.
+---
+
+## ⚠️ Disclaimer
+
+This project was developed strictly for academic, educational, and technical portfolio demonstration purposes. All automated tests are executed locally within an isolated environment and are not intended for commercial use or mass data scraping.
