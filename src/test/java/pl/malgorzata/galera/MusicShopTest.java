@@ -33,7 +33,7 @@ public class MusicShopTest {
     @AfterEach
     public void tearDown() {
         if (driver != null) {
-            //driver.quit();
+            driver.quit();
         }
     }
 
@@ -49,7 +49,7 @@ public class MusicShopTest {
 
         String headlineText = resultsPage.getSearchHeadlineText();
         Assertions.assertTrue(headlineText.contains("Gibson"),
-                "Nagłówek wyszukiwania na stronie wyników nie zawiera szukanej frazy!");
+                "Search results headline does not contain the expected phrase!");
     }
 
     @Test
@@ -64,6 +64,6 @@ public class MusicShopTest {
         String price = resultsPage.getProductPrice();
 
         System.out.println("---------> CENA GIBSONA: " + price + " <---------");
-        Assertions.assertFalse(price.isEmpty(), "Cena produktu jest pusta!");
+        Assertions.assertFalse(price.isEmpty(), "Product price is empty!");
     }
 }

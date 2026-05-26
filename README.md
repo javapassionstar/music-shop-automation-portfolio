@@ -1,24 +1,42 @@
 # 🛒 Music Shop E-Commerce Automation Framework
 
-A professional e-commerce test automation framework based on the Thomann music store platform. The project is engineered according to production-grade commercial standards and optimized for business efficiency.
-
-## 🚀 Architecture & Tech Stack
-
-* **Java 17** – Utilizing modern object-oriented standards and features.
-* **Selenium WebDriver 4** – Advanced browser control and modern automation API.
-* **Page Object Model (POM)** – Strict separation of the test logic layer from UI locators for high maintainability.
-* **Fluent Interface (Method Chaining)** – Elegant code structure that mirrors natural business language and improves readability.
-* **JUnit 5** – Modern test engine utilizing powerful assertions and lifecycle management.
+A professional e-commerce test automation framework based on the Thomann music store platform. The project demonstrates production-grade test automation practices, maintainable architecture, and business-oriented optimization techniques.
 
 ---
 
-## 🗺️ Optimized Test Cases
+# 🚀 Architecture & Tech Stack
 
-1. `testSearchForInstrument` – Verifies the functionality, accuracy, and performance of the product search engine.
-2. `testExtractProductPrice` – A business-optimized test that extracts financial data (product prices) directly from the search results grid. This approach eliminates unnecessary page reloads and page transitions, significantly reducing test execution time and infrastructure overhead.
+- **Java 17** – Utilizing modern object-oriented programming standards and features.
+- **Selenium WebDriver 4** – Advanced browser automation and modern WebDriver API.
+- **Page Object Model (POM)** – Strict separation of test logic from UI locators for improved maintainability and scalability.
+- **Fluent Interface (Method Chaining)** – Elegant and readable test flow design reflecting natural business language.
+- **JUnit 5** – Modern testing framework with assertions and lifecycle management.
 
 ---
 
-## ⚠️ Disclaimer
+# ⚙️ Framework Features
 
-This project was developed strictly for academic, educational, and technical portfolio demonstration purposes. All automated tests are executed locally within an isolated environment and are not intended for commercial use or mass data scraping.
+- Scalable Page Object Model architecture
+- Reusable WebDriver management layer
+- Fluent Interface implementation
+- Centralized test configuration
+- Explicit waits and synchronization handling
+- Clean separation of concerns
+- Readable and maintainable test design
+
+---
+
+# 🧪 Optimized Test Cases
+
+1. **testSearchForInstrument**  
+   Verifies the functionality, accuracy, and reliability of the product search engine.
+
+2. **testExtractProductPrice**  
+   A business-oriented optimization test that extracts product pricing data directly from the search results grid, minimizing unnecessary page transitions and improving execution efficiency.
+
+---
+
+# ⚠️ Disclaimer
+
+This project was developed strictly for educational, technical portfolio, and demonstration purposes.  
+All automated tests are executed locally within an isolated environment and are not intended for commercial use or mass data scraping.

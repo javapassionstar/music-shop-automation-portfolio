@@ -13,8 +13,10 @@ public class SearchResultsPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
     private final By searchHeadline = By.className("header-headline");
-    private final By firstProductLink = By.xpath("//a[contains(@class, 'product__image') or contains(@class, 'fx-link')]");
-    private final By productPriceLocator = By.cssSelector(".fx-typography-price-primary.fx-price-group__primary.product__price-primary");
+    private final By firstProductLink = By.xpath(
+            "//a[contains(@class, 'product__image') or contains(@class, 'fx-link')]");
+    private final By productPriceLocator = By.cssSelector(
+            ".fx-typography-price-primary.fx-price-group__primary.product__price-primary");
 
     public SearchResultsPage(WebDriver driver) {
         this.driver = driver;
@@ -30,6 +32,7 @@ public class SearchResultsPage {
         WebElement priceElement = wait.until(ExpectedConditions.visibilityOfElementLocated(productPriceLocator));
         return priceElement.getText();
     }
+
     public ProductDetailsPage clickFirstProduct() {
         wait.until(ExpectedConditions.elementToBeClickable(firstProductLink)).click();
         return new ProductDetailsPage(driver);

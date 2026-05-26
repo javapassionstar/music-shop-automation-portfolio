@@ -6,14 +6,24 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
 
 public class ThomannHomePage {
+
+    private static final String BASE_URL = "https://www.thomann.de";
+
     private final WebDriver driver;
     private final WebDriverWait wait;
 
-    private final By acceptCookiesButton = By.xpath("//button[contains(@class, 'fx-button') or contains(text(), 'Akceptuję') or contains(text(), 'Accept')]");
-    private final By searchInputLocator = By.xpath("//*[@data-track-id= 'searchBox']");
+    private final By acceptCookiesButton = By.xpath(
+            "//button[contains(@class,'fx-button') " +
+                    "or contains(text(),'Accept') " +
+                    "or contains(text(),'Akceptuję')]"
+    );
+
+    private final By searchInputLocator =
+            By.xpath("//*[@data-track-id='searchBox']");
 
     public ThomannHomePage(WebDriver driver) {
         this.driver = driver;
@@ -21,20 +31,27 @@ public class ThomannHomePage {
     }
 
     public ThomannHomePage open() {
-        driver.get("https://thomann.de");
+        driver.get(BASE_URL);
         return this;
     }
 
     public ThomannHomePage acceptCookiesIfVisible() {
-        WebElement acceptBtn = wait.until(ExpectedConditions.elementToBeClickable(acceptCookiesButton));
+        WebElement acceptBtn = wait.until(
+                ExpectedConditions.elementToBeClickable(acceptCookiesButton));
+
         acceptBtn.click();
         return this;
     }
 
-    public void searchForInstrument(String instrumentName) {
-        WebElement searchInput = wait.until(ExpectedConditions.visibilityOfElementLocated(searchInputLocator));
+    public SearchResultsPage searchForInstrument(String instrumentName) {
+
+        WebElement searchInput = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(searchInputLocator));
+
         searchInput.clear();
         searchInput.sendKeys(instrumentName);
         searchInput.sendKeys(Keys.ENTER);
+
+        return new SearchResultsPage(driver);
     }
 }
